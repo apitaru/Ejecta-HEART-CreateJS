@@ -1,29 +1,18 @@
 /*
 This is the initial file that ejecta looks at when running the up. Think of it as our replacement of index.html
-
-The order in which we load things in is very important.
-
-There are a few quirks to keep in mind re. the canvas object:
-At the moment, Ejecta does not let us resize the canvas more than once.
-Ejecta also does not allow us to load Images before the canvas' context is retreived.
-Here's the proper order to load things in: 
 */
 
-/////////////////////////////////////
-// START UP EJECTA'S CANVAS ENGINE
-/////////////////////////////////////
-//var canvas = document.getElementById("canvas");
+///////////////////////////////////////////
+// START UP EJECTA'S CANVAS SIZE (OPTIONAL)
+///////////////////////////////////////////
 canvas.width = 640;
 canvas.height = 960;
-var ctx = canvas.getContext('2d');
-
 
 /////////////////////////////////////
 //LOAD IN EASELJS AND OTHER LIBRARIES
 /////////////////////////////////////
 // Load EaselJS and required patches to to both EaselJS and Ejecta, so they can play nice.
 ejecta.require("../libs/pitaru/ejecta-heart-createjs.js");
-
 
 /////////////////////////////////////
 // LOAD OUR APP SCRIPT

@@ -9,21 +9,18 @@ Things to know:
 6) Hit the Run button (play icon), Ejecta will look in this file first and load up the rest of the source files you've specified below
 
 */
+// Set the resolution for your canvas, based on the device you're aiming for.
+// You can also mark these out for auto-resizing
+canvas.width = 640;
+canvas.height = 960;
 
-// Ejecta initializes when we create a canvas element and grab its content for the first time.
-// So it's recommended to do it here first. You can grab the canvas again directly in your app, or use this blogal object.
-var canvas = document.getElementById("canvas");
-// Unmark these to set a specific canvs size, otherwise canvas will resize automatically to fit device screen resolution
-//canvas.width = 640;
-//canvas.height = 960;
-var ctx = canvas.getContext('2d');
-
+// Load the patch that makes Ejecta play nice with CreateJS
 ejecta.require("../libs/pitaru/ejecta-heart-createjs.js");
 
 ///////////////////////////////////////////
 // LOAD YOUR CODE HERE, AND FIRE IT UP...
 ///////////////////////////////////////////
-// Use ejecta.require commands to load your code in order ... 
+// Use ejecta.require commands to load your code in sequence... 
 //ejecta.require("my_source_file.js");
 //ejecta.require("my_other_source_file.js");
 //ejecta.require("my_app_file.js");
