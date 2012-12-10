@@ -15,47 +15,47 @@ Allowing Ejecta to run EaselJS projects seamlessly.
 We can load any version of easeljs. For easier debugging, we can also load the bare easeljs source files.
 'require' is special ejecta object to simulate what we would typicaly do with <script> tags in html.
 */
-ejecta.require("../libs/createjs/easeljs/easeljs-NEXT.min.js");
+ejecta.include("../libs/createjs/easeljs/easeljs-NEXT.min.js");
 
 // Beyond the minidied version, we mighy need ditional easelJS files such as the Filter, Movielcips and various builders. In aditio, for debugging purposes, I sometimes load the entire bare easeljs source code instead of the minified version. I have not included the entire source files in the repo, as I'd like to prevent XCODE loading them unless needed. If you unmark the files below, make sure to copy them into the libs/createjs/easeljs folder.
 /*
-ejecta.require("../libs/createjs/easeljs/src/easeljs/utils/UID.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/utils/Ticker.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/utils/SpriteSheetUtils.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/utils/SpriteSheetBuilder.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/utils/UID.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/utils/Ticker.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/utils/SpriteSheetUtils.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/utils/SpriteSheetBuilder.js");
 
-ejecta.require("../libs/createjs/easeljs/src/easeljs/geom/Matrix2D.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/geom/Rectangle.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/geom/Point.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/geom/Matrix2D.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/geom/Rectangle.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/geom/Point.js");
 
-ejecta.require("../libs/createjs/easeljs/src/easeljs/display/DisplayObject.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Container.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Stage.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Bitmap.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/display/BitmapAnimation.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/display/SpriteSheet.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Shape.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Graphics.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Text.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Shadow.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/display/DisplayObject.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Container.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Stage.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Bitmap.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/display/BitmapAnimation.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/display/SpriteSheet.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Shape.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Graphics.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Text.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Shadow.js");
 
-ejecta.require("../libs/createjs/easeljs/src/easeljs/events/MouseEvent.js");
-ejecta.require("../libs/createjs/easeljs/src/easeljs/events/EventDispatcher.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/events/MouseEvent.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/events/EventDispatcher.js");
 
-ejecta.require("../libs/createjs/easeljs/src/easeljs/ui/Touch.js");
+ejecta.include("../libs/createjs/easeljs/src/easeljs/ui/Touch.js");
 */
 
-ejecta.require("../libs/createjs/tweenjs/tweenjs-0.3.0.min.js");
-ejecta.require("../libs/createjs/easeljs/display/MovieClip.js");
+ejecta.include("../libs/createjs/tweenjs/tweenjs-0.3.0.min.js");
+ejecta.include("../libs/createjs/easeljs/display/MovieClip.js");
 
 
-ejecta.require("../libs/createjs/easeljs/filters/Filter.js");
-ejecta.require("../libs/createjs/easeljs/filters/ColorMatrixFilter.js");
-ejecta.require("../libs/createjs/easeljs/filters/ColorMatrix.js");
-ejecta.require("../libs/createjs/easeljs/filters/ColorFilter.js");
-ejecta.require("../libs/createjs/easeljs/filters/BoxBlurFilter.js");
-ejecta.require("../libs/createjs/easeljs/filters/AlphaMaskFilter.js");
-ejecta.require("../libs/createjs/easeljs/filters/AlphaMapFilter.js");
+ejecta.include("../libs/createjs/easeljs/filters/Filter.js");
+ejecta.include("../libs/createjs/easeljs/filters/ColorMatrixFilter.js");
+ejecta.include("../libs/createjs/easeljs/filters/ColorMatrix.js");
+ejecta.include("../libs/createjs/easeljs/filters/ColorFilter.js");
+ejecta.include("../libs/createjs/easeljs/filters/BoxBlurFilter.js");
+ejecta.include("../libs/createjs/easeljs/filters/AlphaMaskFilter.js");
+ejecta.include("../libs/createjs/easeljs/filters/AlphaMapFilter.js");
 
 
 ///////////////////////////////////
@@ -310,147 +310,6 @@ createjs.Bitmap.prototype.isVisible = function() {
 	// UDATE: this.image.complete just added per my request .. try to bring it back into the mix and test if it works.
 }
 
-
-/**
- * Draws the display object into a new canvas, which is then used for subsequent draws. For complex content
- * that does not change frequently (ex. a Container with many children that do not move, or a complex vector Shape),
- * this can provide for much faster rendering because the content does not need to be re-rendered each tick. The
- * cached display object can be moved, rotated, faded, etc freely, however if it's content changes, you must manually
- * update the cache by calling updateCache() or cache() again. You must specify the cache area via the x, y, w,
- * and h parameters. This defines the rectangle that will be rendered and cached using this display object's
- * coordinates. For example if you defined a Shape that drew a circle at 0, 0 with a radius of 25, you could call
- * myShape.cache(-25, -25, 50, 50) to cache the full shape.
- * @method cache
- * @param {Number} x The x coordinate origin for the cache region.
- * @param {Number} y The y coordinate origin for the cache region.
- * @param {Number} width The width of the cache region.
- * @param {Number} height The height of the cache region.
- * @param {Number} scale Optional. The scale at which the cache will be created. For example, if you cache a vector shape using
- * 	myShape.cache(0,0,100,100,2) then the resulting cacheCanvas will be 200x200 px. This lets you scale and rotate
- * 	cached elements with greater fidelity. Default is 1.
- **/
- /*
-createjs.DisplayObject.prototype.cache = function(x, y, width, height, scale) {
-    // draw to canvas.
-    scale = scale||1;
-    
-	// Ejecta .. original was this .. 
-    if (!this.cacheCanvas) { this.cacheCanvas = createjs.createCanvas?createjs.createCanvas():document.createElement("canvas"); }
-    // second change was this ... if (!this.cacheCanvas) this.cacheCanvas = document.createElement("canvas");
-    // first change was this  ... this.cacheCanvas = document.createElement("canvas");
-	
-    this.cacheCanvas.width = Math.ceil(width*scale);
-    this.cacheCanvas.height = Math.ceil(height*scale);
-    this._cacheOffsetX = x;
-    this._cacheOffsetY = y;
-    this._cacheScale = scale||1;
-    this.updateCache();
-}
-*/
-
-
-/*
-//////////////////////////////
-// PRELOADJS
-// In the works, but doesn't gell just yet. Keep at it.
-/////////////////////////////
-
-createjs.TagLoader.prototype.init = function (item, srcAttr, useXHR) {
-		this._item = item;
-		this._srcAttr = srcAttr || "src";
-		this.useXHR = (useXHR == true);
-		this.isAudio = false;//(item.tag instanceof HTMLAudioElement);
-		this.tagCompleteProxy = createjs.PreloadJS.proxy(this._handleTagLoad, this);
-	};
-
-
-createjs.PreloadJS.prototype._createLoadItem = function(loadItem) {
-		var item = {};
-
-		// Create/modify a load item
-		switch(typeof(loadItem)) {
-			case "string":
-				item.src = loadItem; break;
-			case "object":
-				//if (loadItem instanceof HTMLAudioElement) {
-				//	item.tag = loadItem;
-				//	item.src = item.tag.src;
-				//	item.type = createjs.PreloadJS.SOUND;
-				//} else {
-					item = loadItem;
-				//}
-				break;
-			default:
-				break;
-		}
-
-		// Get source extension
-		item.ext = this._getNameAfter(item.src, ".");
-		if (!item.type) {
-			item.type = this.getType(item.ext)
-		}
-		//If there's no id, set one now.
-		if (item.id == null || item.id == "") {
-			//item.id = this._getNameAfter(item.src, "/");
-            item.id = item.src; //[SB] Using the full src is more robust, and more useful from a user perspective.
-		}
-
-		// Give plugins a chance to modify the loadItem
-		var customHandler = this.typeHandlers[item.type] || this.extensionHandlers[item.ext];
-		if (customHandler) {
-			var result = customHandler(item.src, item.type, item.id, item.data);
-			//Plugin will handle the load, so just ignore it.
-			if (result === false) {
-				return null;
-
-			// Load as normal
-			} else if (result === true) {
-				// Do Nothing
-			// Result is a loader class
-			} else {
-				if (result.src != null) { item.src = result.src; }
-				if (result.id != null) { item.id = result.id; }
-				if (result.tag != null && result.tag.load instanceof Function) { //Item has what we need load
-					item.tag = result.tag;
-				}
-			}
-
-			// Update the extension in case the type changed
-			item.ext = this._getNameAfter(item.src, ".");
-		}
-
-		var useXHR2 = this.useXHR;
-
-		// Determine the XHR2 usage overrides
-		switch (item.type) {
-			case createjs.PreloadJS.JSON:
-			case createjs.PreloadJS.XML:
-			case createjs.PreloadJS.TEXT:
-				useXHR2 = true; // Always use XHR2 with text
-				break;
-			case createjs.PreloadJS.SOUND:
-				if (item.ext == "ogg" && createjs.PreloadJS.TAG_LOAD_OGGS) {
-					useXHR2 = false; // OGGs do not work well with XHR in Firefox.
-				}
-				break;
-		}
-
-		if (this.useXHR == true && (item.type == createjs.PreloadJS.IMAGE || item.type == createjs.PreloadJS.SVG)) {
-			var loader = this._createTagItem(item);
-			loader.useXHR = true;
-			return loader;
-		}
-
-		if (useXHR2) {
-			return new createjs.XHRLoader(item);
-		} else if (!item.tag) {
-			return this._createTagItem(item);
-		} else {
-			return new createjs.TagLoader(item);
-		}
-	};
-
-*/
 
 ///////////////////////////////////
 // PATCH EJECTA
