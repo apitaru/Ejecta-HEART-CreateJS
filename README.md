@@ -18,14 +18,15 @@ Ejecta was intended to work seamlessly with the [ImpactJS](http://impactjs.com) 
 **This project strives to allow CreateJS projects to be used with Ejecta.** This is done by loading up a patch file (in libs/pitaru/ejecta-heart-createjs.js) that injects changes to both libraries (mostly EaselJS). This is an ongoing project, very much in alpha stages. I'd say that about 70% of EaselJS works seamlessly. It's my hope that more developers will notice the great potential in this combination and join me in hashing out the remaining 30%.
 
 Here's a quick overview of the project's folders and files: 
-|- libs .. The ejecta-heart-createjs patch file, as well as other createJS code for convinience. 
-|- App   .. Your app folder. By default I've incuded many of the examples from the EaselJS github repo.
-  |- index.js .. the main (default) project file that Ejecta executes (think of it as the index.html equivalent)
-  |- assets .. images and other assets that the createJS examples require.
-  |- src  .. where all of your source code sits. At the moment it has the example files that come with EaselJS
-     |- works .. EaselJS examples that work similarly in the browser and on the iOS device.
-     |- partial .. EaselJS examples that only work partially due to a non-crucial missing feature or other incompatibility. 
-     |- fail 	.. EaselJS examples that won't load due to a crucial missing feature or other incompatibility.
+
+	|- libs .. The ejecta-heart-createjs patch file, as well as other createJS code for convinience. 
+	|- App   .. Your app folder. By default I've incuded many of the examples from the EaselJS github repo.
+	  |- index.js .. the main (default) project file that Ejecta executes (think of it as the index.html equivalent)
+	  |- assets .. images and other assets that the createJS examples require.
+	  |- src  .. where all of your source code sits. At the moment it has the example files that come with EaselJS
+	     |- works .. EaselJS examples that work similarly in the browser and on the iOS device.
+	     |- partial .. EaselJS examples that only work partially due to a non-crucial missing feature or other incompatibility. 
+	     |- fail 	.. EaselJS examples that won't load due to a crucial missing feature or other incompatibility.
 
 
 ## Requirements and Installation Steps
