@@ -25,6 +25,7 @@ ejecta.include("../libs/pitaru/ejecta-heart-createjs.js");
 
 // WORKS ////
 // These are Examples that work with minimal or no changes to the source code:
+//ejecta.include("src/BarGraph.js");
 //ejecta.include("src/Cache_vday.js");
 //ejecta.include("src/Cache.js");
 //ejecta.include("src/CacheUpdate.js");
@@ -55,7 +56,6 @@ ejecta.include("src/HelloWorld.js");
 
 // PARTIALLY WORKS ////////
 // These examples will run with limitted functionlality 
-//ejecta.include("src/partially_works/BarGraph.js");
 //ejecta.include("src/partially_works/GraphicsTestTiny.js");
 //ejecta.include("src/partially_works/BitmapAnimation.js");
 
