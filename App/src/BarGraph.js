@@ -1,7 +1,6 @@
 /*
-Ejecta is missing beginLinearGradientFill (will be implemented soon). For now I marked out line 76 and added a beginFill on 87 instead
+Ejecta supports linear gradient with https://github.com/phoboslab/Ejecta/commit/8a4814bd600aa362660401fbfa7bc568f2b70974
 */
-
 
 var canvas;
 	var stage;
@@ -73,7 +72,6 @@ var canvas;
 			// draw the front panel of the bar, this will be scaled to the right size in drawBar:
 			var front = new createjs.Shape();
 			
-			/*
 			front.graphics.beginLinearGradientFill(
 					[createjs.Graphics.getHSL(hue,100,60,0.9),
 					createjs.Graphics.getHSL(hue,100,20,0.75)],
@@ -82,8 +80,6 @@ var canvas;
 					-100,
 					barWidth,0).drawRect(0,-100,barWidth+1,
 					100);
-					*/
-			front.graphics.beginFill(createjs.Graphics.getHSL(hue,100,20,0.75)).drawRect(0,-100,barWidth+1,100);
 
 			// draw the top of the bar, this will be positioned vertically in drawBar:
 			var top = new createjs.Shape();
