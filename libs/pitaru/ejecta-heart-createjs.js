@@ -15,47 +15,47 @@ Allowing Ejecta to run EaselJS projects seamlessly.
 We can load any version of easeljs. For easier debugging, we can also load the bare easeljs source files.
 'require' is special ejecta object to simulate what we would typicaly do with <script> tags in html.
 */
-ejecta.include("../libs/createjs/easeljs/easeljs-NEXT.min.js");
+ejecta.require("../libs/createjs/easeljs/easeljs-NEXT.min.js");
 
-// Beyond the minidied version, we mighy need ditional easelJS files such as the Filter, Movielcips and various builders. In aditio, for debugging purposes, I sometimes load the entire bare easeljs source code instead of the minified version. I have not included the entire source files in the repo, as I'd like to prevent XCODE loading them unless needed. If you unmark the files below, make sure to copy them into the libs/createjs/easeljs folder.
+// Beyond the minidied version, we mighy need ditional easelJS files such as the Filter, Movielcips and various builders. In aditio, for debugging purposes, I sometimes load the entire bare easeljs source code instead of the minified version. I have not required the entire source files in the repo, as I'd like to prevent XCODE loading them unless needed. If you unmark the files below, make sure to copy them into the libs/createjs/easeljs folder.
 /*
-ejecta.include("../libs/createjs/easeljs/src/easeljs/utils/UID.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/utils/Ticker.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/utils/SpriteSheetUtils.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/utils/SpriteSheetBuilder.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/utils/UID.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/utils/Ticker.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/utils/SpriteSheetUtils.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/utils/SpriteSheetBuilder.js");
 
-ejecta.include("../libs/createjs/easeljs/src/easeljs/geom/Matrix2D.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/geom/Rectangle.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/geom/Point.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/geom/Matrix2D.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/geom/Rectangle.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/geom/Point.js");
 
-ejecta.include("../libs/createjs/easeljs/src/easeljs/display/DisplayObject.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Container.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Stage.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Bitmap.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/display/BitmapAnimation.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/display/SpriteSheet.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Shape.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Graphics.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Text.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/display/Shadow.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/display/DisplayObject.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Container.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Stage.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Bitmap.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/display/BitmapAnimation.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/display/SpriteSheet.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Shape.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Graphics.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Text.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/display/Shadow.js");
 
-ejecta.include("../libs/createjs/easeljs/src/easeljs/events/MouseEvent.js");
-ejecta.include("../libs/createjs/easeljs/src/easeljs/events/EventDispatcher.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/events/MouseEvent.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/events/EventDispatcher.js");
 
-ejecta.include("../libs/createjs/easeljs/src/easeljs/ui/Touch.js");
+ejecta.require("../libs/createjs/easeljs/src/easeljs/ui/Touch.js");
 */
 
-ejecta.include("../libs/createjs/tweenjs/tweenjs-0.3.0.min.js");
-ejecta.include("../libs/createjs/easeljs/display/MovieClip.js");
+ejecta.require("../libs/createjs/tweenjs/tweenjs-0.3.0.min.js");
+ejecta.require("../libs/createjs/easeljs/display/MovieClip.js");
 
 
-ejecta.include("../libs/createjs/easeljs/filters/Filter.js");
-ejecta.include("../libs/createjs/easeljs/filters/ColorMatrixFilter.js");
-ejecta.include("../libs/createjs/easeljs/filters/ColorMatrix.js");
-ejecta.include("../libs/createjs/easeljs/filters/ColorFilter.js");
-ejecta.include("../libs/createjs/easeljs/filters/BoxBlurFilter.js");
-ejecta.include("../libs/createjs/easeljs/filters/AlphaMaskFilter.js");
-ejecta.include("../libs/createjs/easeljs/filters/AlphaMapFilter.js");
+ejecta.require("../libs/createjs/easeljs/filters/Filter.js");
+ejecta.require("../libs/createjs/easeljs/filters/ColorMatrixFilter.js");
+ejecta.require("../libs/createjs/easeljs/filters/ColorMatrix.js");
+ejecta.require("../libs/createjs/easeljs/filters/ColorFilter.js");
+ejecta.require("../libs/createjs/easeljs/filters/BoxBlurFilter.js");
+ejecta.require("../libs/createjs/easeljs/filters/AlphaMaskFilter.js");
+ejecta.require("../libs/createjs/easeljs/filters/AlphaMapFilter.js");
 
 
 ///////////////////////////////////
@@ -72,7 +72,7 @@ ejecta.include("../libs/createjs/easeljs/filters/AlphaMapFilter.js");
 createjs.Stage.prototype._getElementRect = function(e) {
   
 		/*
-		// Original implementation included the offest of HTML elements.
+		// Original implementation required the offest of HTML elements.
 		// It was also using a.getBoundingClientRect() which isn't implemented in Ejecta
 		// For Ejecta, we just need to return the entire canvas size object.
 		// I'll explain in more detail soon... 
