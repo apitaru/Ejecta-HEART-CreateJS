@@ -32,10 +32,30 @@ this.createjs = this.createjs||{};
 (function() {
 
 /**
-* Base class that all filters should inherit from.
-* @class Filter
-* @constructor
-**/
+ * Base class that all filters should inherit from. Filters need to be applied to objects that have been cached using
+ * the {{#crossLink "DisplayObject/cache"}}{{/crossLink}} method. If an object changes, please cache it again, or use
+ * {{#crossLink "DisplayObject/updateCache"}}{{/crossLink}}.
+ *
+ * <h4>Example</h4>
+ *      myInstance.cache(0,0, 100, 100);
+ *      myInstance.filters = [
+ *          new createjs.ColorFilter(0, 0, 0, 1, 255, 0, 0),
+ *          new createjs.BoxBlurFilter(5, 5, 10)
+ *      ];
+ *
+ * <h4>EaselJS Filters</h4>
+ * EaselJS comes with a number of pre-built filters. Note that individual filters are not compiled into the minified
+ * version of EaselJS. To use them, you must include them manually in the HTML.
+ * <ul><li>{{#crossLink "AlphaMapFilter"}}{{/crossLink}} : Map a greyscale image to the alpha channel of a display object</li>
+ *      <li>{{#crossLink "AlphaMaskFilter"}}{{/crossLink}}: Map an image's alpha channel to the alpha channel of a display object</li>
+ *      <li>{{#crossLink "BoxBlurFilter"}}{{/crossLink}}: Apply vertical and horizontal blur to a display object</li>
+ *      <li>{{#crossLink "ColorFilter"}}{{/crossLink}}: Color transform a display object</li>
+ *      <li>{{#crossLink "ColorMatrixFilter"}}{{/crossLink}}: Transform an image using a {{#crossLink "ColorMatrix"}}{{/crossLink}}</li>
+ * </ul>
+ *
+ * @class Filter
+ * @constructor
+ **/
 var Filter = function() {
   this.initialize();
 }

@@ -25,7 +25,7 @@ ejecta.include("../libs/pitaru/ejecta-heart-createjs.js");
 
 // WORKS ////
 // These are Examples that work with minimal or no changes to the source code:
-//ejecta.include("src/Cache_vday.js");
+
 //ejecta.include("src/Cache.js");
 //ejecta.include("src/CacheUpdate.js");
 //ejecta.include("src/CurveTo.js");
@@ -43,9 +43,7 @@ ejecta.include("src/HelloWorld.js");
 //ejecta.include("src/Transform_simple.js");
 //ejecta.include("src/SpriteSheetBuilder.js");
 
-// Unmark these two together
-//ejecta.include("src/SpriteSheetBuilderMC/gunnertron_g.js");
-//ejecta.include("src/SpriteSheetBuilderMC/SpriteSheetBuilder_MovieClip.js");
+
 
 // Unmark these two together
 //ejecta.include("assets/Segment.js"); // this would typically be loaded via html <script>
@@ -54,12 +52,21 @@ ejecta.include("src/HelloWorld.js");
 
 
 // PARTIALLY WORKS ////////
-// These examples will run with limitted functionlality 
+
+// These examples will run with limitted functionlality
+// Todo: I need to check if new Ejecta started to support some of the missing functionality.
 //ejecta.include("src/partially_works/BarGraph.js");
 //ejecta.include("src/partially_works/GraphicsTestTiny.js");
 //ejecta.include("src/partially_works/BitmapAnimation.js");
 
 // FAILED ///////
+
+// Used to work with create 5.0, but not with 6.0
+//ejecta.include("src/Cache_vday.js");
+// Unmark these two together
+//ejecta.include("src/SpriteSheetBuilderMC/gunnertron_g.js");
+//ejecta.include("src/SpriteSheetBuilderMC/SpriteSheetBuilder_MovieClip.js");
+
 // These examples are not yet compatible with Ejecta
 //ejecta.include("src/failed/Filters.js");
 //ejecta.include("src/failed/SpriteSheet.js");

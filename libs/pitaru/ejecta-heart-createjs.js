@@ -263,7 +263,9 @@ createjs.Stage.prototype.initialize = function(_canvas) {
     this.canvas = _canvas;
 	
     this._pointerData = {};
-    this._enableMouseEvents(true);
+    this.enableDOMEvents(true);
+	
+	
 }
 
 
