@@ -15,15 +15,15 @@ canvas.width = 640;
 canvas.height = 960;
 
 // Load the patch that makes Ejecta play nice with CreateJS
-ejecta.require("../libs/pitaru/ejecta-heart-createjs.js");
+ejecta.include("../libs/pitaru/ejecta-heart-createjs.js");
 
 ///////////////////////////////////////////
 // LOAD YOUR CODE HERE, AND FIRE IT UP...
 ///////////////////////////////////////////
-// Use ejecta.require commands to load your code in sequence... 
-//ejecta.require("my_source_file.js");
-//ejecta.require("my_other_source_file.js");
-//ejecta.require("my_app_file.js");
+// Use ejecta.include commands to load your code in sequence... 
+//ejecta.include("my_source_file.js");
+//ejecta.include("my_other_source_file.js");
+//ejecta.include("my_app_file.js");
 // Optionally you can run your startup command when all's loaded:
 // myApp.init();
 
