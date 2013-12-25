@@ -43,16 +43,18 @@
 		fpsLabel.y = 20;
 
 		// start the tick and point it at the window so we can do some work before updating the stage:
-		createjs.Ticker.addListener(window);
+		//createjs.Ticker.addEventListener("tick",stage);
+		createjs.Ticker.addEventListener("tick", tick);
 		createjs.Ticker.setFPS(50);
         
         // Ejecta
         createjs.Touch.enable(stage);
-        stage.onMouseDown = function(){
-            toggleCache(isCached = !isCached);
-            console.log("onMouseDown isCached:", isCached);
-        }
-		
+        stage.addEventListener("mousedown", handlePress);
+		function handlePress(event) {
+			toggleCache(isCached = !isCached);
+			console.log("onMouseDown isCached:", isCached);
+		}
+
 		toggleCache(isCached);
         
 	}

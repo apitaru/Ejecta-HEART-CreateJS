@@ -15,7 +15,7 @@ canvas.height = 960;
 //LOAD IN EASELJS AND OTHER LIBRARIES
 /////////////////////////////////////
 // Load EaselJS and required patches to to both EaselJS and Ejecta, so they can play nice.
-ejecta.include("../libs/pitaru/ejecta-heart-createjs.js");
+ejecta.include("../libs/pitaru/ejecta-heart-createjs-7.js");
 
 /////////////////////////////////////
 // LOAD OUR APP SCRIPT
@@ -26,14 +26,14 @@ ejecta.include("../libs/pitaru/ejecta-heart-createjs.js");
 // WORKS ////
 // These are Examples that work with minimal or no changes to the source code:
 
-//ejecta.include("src/Cache.js");
+ejecta.include("src/Cache.js");
 //ejecta.include("src/CacheUpdate.js");
 //ejecta.include("src/CurveTo.js");
 //ejecta.include("src/DragAndDrop_hitArea.js");
 //ejecta.include("src/GlobalToLocal1.js");
 //ejecta.include("src/GraphicsReuse.js");
 //ejecta.include("src/Graphics_simple.js");
-ejecta.include("src/HelloWorld.js");
+//ejecta.include("src/HelloWorld.js");
 //ejecta.include("src/Icons.js");
 //ejecta.include("src/LocalToGlobal.js");
 //ejecta.include("src/Masks.js");

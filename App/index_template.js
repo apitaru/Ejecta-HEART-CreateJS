@@ -15,7 +15,7 @@ canvas.width = 640;
 canvas.height = 960;
 
 // Load the patch that makes Ejecta play nice with CreateJS
-ejecta.include("../libs/pitaru/ejecta-heart-createjs.js");
+ejecta.include("../libs/pitaru/ejecta-heart-createjs-7.js");
 
 ///////////////////////////////////////////
 // LOAD YOUR CODE HERE, AND FIRE IT UP...
