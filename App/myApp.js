@@ -15,14 +15,11 @@
 
     var daisy = new c.Bitmap("daisy.png");
 
-
     daisy.scaleX = 4;
     daisy.scaleY = 4;
     daisy.x = canvas.width/2;
     daisy.y = canvas.height/2;
     daisy.touchesDown = 0;
-
-
 
     c.Touch.enable(stage);
     c.Ticker.setFPS(60);
