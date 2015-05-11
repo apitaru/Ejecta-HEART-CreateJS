@@ -16,7 +16,7 @@
 // Set up additional Ejecta (iOS) specific options. Check out http://impactjs.com/ejecta/overview for details
 var canvas = document.getElementById('canvas');
 canvas.MSAAEnabled = false; // OpenGL Screen-wide Anti Aliasing? (will slow down your project)
-canvas.retinaResolutionEnabled = false; // use Retina resolution? (will slow down older iPads)
+canvas.retinaResolutionEnabled = true; // use Retina resolution? (will slow down older iPads)
 
 // Load up createjs. Here I'm loading a combined yet non-minified version of the entire lib.
 ejecta.include("../libs/createjs/createjs-2013.12.12.combined.js");

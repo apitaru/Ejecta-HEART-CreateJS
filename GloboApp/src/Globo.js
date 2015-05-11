@@ -8,12 +8,12 @@ function init() {
     var stage = new c.Stage(canvas),
         globo = new pt.Globo();
     
-    c.Ticker.setFPS(30);
+    c.Ticker.setFPS(60);
     //c.Ticker.addListener(stage);
 	c.Ticker.addEventListener('tick',  stage);
 
     globo.x = canvas.width / 2;
-    globo.y =canvas.height / 2;
+    globo.y = canvas.height / 2;
     stage.addChild(globo);
     
     // enable touch interactions if supported on the current device:
@@ -30,10 +30,10 @@ p.initialize = function() {
     
     var globo = this,
     sections = [
-        new c.BitmapAnimation( pt.Globo.sectionSpriteSheets[0] ),
-        new c.BitmapAnimation( pt.Globo.sectionSpriteSheets[1] ),
-        new c.BitmapAnimation( pt.Globo.sectionSpriteSheets[2] ),
-        new c.BitmapAnimation( pt.Globo.sectionSpriteSheets[3] )
+        new c.Sprite( pt.Globo.sectionSpriteSheets[0] ),
+        new c.Sprite( pt.Globo.sectionSpriteSheets[1] ),
+        new c.Sprite( pt.Globo.sectionSpriteSheets[2] ),
+        new c.Sprite( pt.Globo.sectionSpriteSheets[3] )
     ],
     yPositions = [0, 50, 116, 186];
     
@@ -42,9 +42,9 @@ p.initialize = function() {
         section.play();
 		section.addEventListener('mousedown', function(e) {
 									
-									if (section.paused) {
+                                if (section.paused) {
 									section.play();
-									} else {
+                                } else {
 									section.stop();
 									}
 								 });
