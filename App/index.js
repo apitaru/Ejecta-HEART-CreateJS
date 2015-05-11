@@ -18,10 +18,10 @@ var canvas = document.getElementById('canvas');
 canvas.MSAAEnabled = false; // OpenGL Screen-wide Anti Aliasing? (will slow down your project)
 canvas.retinaResolutionEnabled = false; // use Retina resolution? (will slow down older iPads)
 
-// Load up createjs. Here I'm loading a combined yet non-minified version of the entire lib.
-ejecta.include("../libs/createjs/createjs-2013.12.12.combined.js");
-// Load the patch that makes Ejecta play nice with CreateJS
-ejecta.include("../libs/pitaru/ejecta-heart-createjs-7.js");
+
+// Load the patch that makes Ejecta play nice with CreateJS (it also loades CreateJS automatically)
+ejecta.include("../libs/pitaru/ejecta-heart-createjs-8.js");
+
 
 ///////////////////////////////////////////
 // LOAD YOUR CODE HERE, AND FIRE IT UP...
