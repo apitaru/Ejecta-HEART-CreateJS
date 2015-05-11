@@ -60,12 +60,12 @@
         }
         daisy.x = e.stageX;
         daisy.y = e.stageY;
-      } else if(daisy.touchesDown == 2){
+      } else if(daisy.touchesDown >= 2){
 
         if(e.pointerID == daisy.primaryID){
           daisy.x = e.stageX;
           daisy.y = e.stageY;
-        } else {
+        } else if(e.pointerID == daisy.secondaryID) {
           daisy.rotation = daisy.baseRotation + angle(e.stageX, e.stageY, daisy.x, daisy.y) - daisy.rotationOffset;
           daisy.scaleX = daisy.scaleY = daisy.baseScale*distance(e.stageX, e.stageY, daisy.x, daisy.y)/ daisy.baseDist;
         }
